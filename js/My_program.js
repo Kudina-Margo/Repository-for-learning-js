@@ -24,6 +24,12 @@
 let numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "5");
 console.log(numberOfFilms);
 
+
+let firstMovie = prompt("Один из последних просмотренных фильмов?", "Хатико");
+let firstRating = +prompt("На сколько оцените его?", "9.2");
+let secondMovie = prompt("Второй из последних просмотренных фильмов?", "Матрица");
+let secondRating = +prompt("На сколько оцените его?", "8.2");
+
 const personalMovieDB = {
     count: numberOfFilms,
     movies: {},
@@ -32,20 +38,13 @@ const personalMovieDB = {
     privat: false
 };
 
-let firstMovie = prompt("Один из последних просмотренных фильмов?", "Хатико");
-let firstRating = +prompt("На сколько оцените его?", "9.2");
-let secondMovie = prompt("Второй из последних просмотренных фильмов?", "Матрица");
-let firstRating = +prompt("На сколько оцените его?", "8.2");
+/*let infoFirstMovie = 'firstMovie' + ':' + 'firstRating';
+let infoSecondMovie = 'secondMovie' + ':' + 'secondRating';
 
-let infoFirstMovie = `'firstMovie': 'firstRating'`;
-let infoSecondMovie = `'secondMovie': 'secondRating'`;
-const personalMovieDB = {
-    count: numberOfFilms,
-    movies: {infoFirstMovie, infoSecondMovie},
-    actors: {},
-    genres: [],
-    privat: false
-};
+movies['infoFirstMovie', 'infoSecondMovie']*/
+
+personalMovieDB.movies[firstMovie] = firstRating;
+personalMovieDB.movies[secondMovie] = secondRating;
 
 console.log(personalMovieDB);
 
