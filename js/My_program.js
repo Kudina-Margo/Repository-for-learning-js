@@ -68,7 +68,9 @@ false - выводит в консоль главный объект прогр�
 genres
 
 P.S. Функции вызывать не обязательно*/
-'use strict';
+
+
+/*'use strict';
 let numberOfFilms;
 console.log(numberOfFilms);
 
@@ -135,4 +137,4 @@ function writeYourGenres() {
     }
 }
 
-writeYourGenres();
+writeYourGenres();*/
